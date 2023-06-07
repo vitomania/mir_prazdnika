@@ -1,0 +1,41 @@
+.catalog-page .card {
+    box-shadow: 0px 2px 5px black;
+    transition: transform 0.5s;
+    background-color: rgb(255, 239, 223);
+}
+
+
+.catalog-page .card:hover {
+    transform: translateY(-15px);
+}
+
+.catalog-page .card-button button{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.catalog-page .card img {
+    object-fit: contain;
+    height: 20vw;
+}
+
+
+.catalog-page .star {
+    font-size: 20px;
+}
+.catalog-page .star .checked {
+    color: rgb(255, 196, 0);
+}
+
+
+.card-sizes {
+    align-items: center;
+}
+
+.card-sizes i{
+    width: 20px;
+}

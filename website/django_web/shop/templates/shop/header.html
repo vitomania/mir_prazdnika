@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__top">
+
+    </div>
+    <div class="header__bottom">
+      <div class="header__nav-element nav-element">
+        <button class="nav-element__burger" type="button">
+          <i class="fa fa-bars" type="button"></i>
+        </button>
+        <a class="nav-element__logo" href="{% url 'shop-home' %}">МИР<br/>ПРАЗДНИКА</a>
+      </div>
+  
+      <div class="header__search-catalog search-catalog">
+        <div class="search-catalog__block">
+          <button class="search-catalog__btn " type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+          <input class="search-catalog__input" type="search" placeholder="Поиск">
+        </div>
+      </div>
+
+      <div class="header__navbar-pc navbar-pc">
+        <div class="navbar-pc__item">
+          <a href="#" class="navbar-pc__link">
+            <i class="fa fa-map-marker"></i><br/><span>Адреса</span>
+          </a>
+        </div>
+        <div class="navbar-pc__item">
+          <a href="{% url 'login' %}" class="navbar-pc__link">
+            <i class="fa fa-user"></i><br/><span>Войти</span>
+          </a>
+        </div>
+        <div class="navbar-pc__item">
+          <a href="#" class="navbar-pc__link">
+            <i class="fa fa-shopping-cart"></i><br/><span>Корзина</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

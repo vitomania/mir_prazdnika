@@ -1,0 +1,133 @@
+.filters-sidebar {
+    position: fixed;
+    top: 0;
+    right: -330px;
+    width: 330px;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(188, 188, 212);
+    transition: right 0.4s ease;
+}
+
+.filters-sidebar.show {
+    right: 0;
+}
+
+.filters-sidebar__content {
+    width: 100%;
+    height: 100%;
+}
+
+.filters-sidebar__container {
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.filters-sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters-sidebar__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* Start: create the closing button for .filters-sidebar__header */
+
+.filters-sidebar__btn-close {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.filters-sidebar__btn-close:before, .filters-sidebar__btn-close:after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+    opacity: 0.5;
+    margin-top: -28%;
+}
+
+.filters-sidebar__btn-close:hover:before, .filters-sidebar__btn-close:hover:after {
+    opacity: 1;
+}
+
+.filters-sidebar__btn-close:before {
+    transform: rotate(45deg);
+}
+  
+.filters-sidebar__btn-close:after {
+    transform: rotate(-45deg);
+}
+
+/* End: create the closing button for .filters-sidebar__header */
+
+.filters-sidebar__item {
+    position: relative;
+}
+
+.filters-sidebar__item-title i {
+    position: absolute;
+    right: 0px;
+    /* transition: transform 0.4s; */
+}
+
+/* .filters-sidebar__item-title i:hover {
+    transform: rotate(-180deg);
+} */
+
+.filters-sidebar__input-search {
+
+}
+
+
+/*  */
+
+.filters-sidebar .filter__item {
+    list-style: none;
+}
+
+.filters-sidebar .filter__item {
+    list-style: none;
+}
+
+.radio-with-text {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 34px;
+}
+
+.radio-with-text__decor {
+    border: 2px solid grey;
+    border-radius: 50%;
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.radio-with-text__decor::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: rgb(214, 60, 85);
+}

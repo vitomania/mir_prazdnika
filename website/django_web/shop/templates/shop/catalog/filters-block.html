@@ -1,0 +1,61 @@
+<div class="container-fluid filters-block">
+    <div class="row">
+        <div class="col-md-10 filter-container" id="dropdown-filters-block">
+            {% for filter_block, filters in filters_block.items %}
+                {% if filter_block|upper == 'PRICE' %}
+                    <div class="dropdown mr-2 dropdown-filter">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">{{ filter_block|capfirst }}</button>
+                        <ul class="dropdown-menu">
+                            <div class="filter-price">
+                                <div class="filter-price-item">
+                                    <h5 class="filter-price-title">From</h5>
+                                    <div class="filter-price-input-search">
+                                        <input class="price-from" value="0" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="filter-price-item">
+                                    <h5 class="filter-price-title">To</h5>
+                                    <div class="filter-price-input-search">
+                                        <input class="price-to" value="10000" type="text"/>
+                                    </div>
+                                </div>
+                                <div class="filter-price-btn">
+                                    <button class="filter-price_btn" type="button">Cancel</button>
+                                    <button class="filter-price_btn done-btn" type="button">Done</button>
+                                </div>
+
+                            </div>
+                        </ul>
+                    </div>
+                {% else %}
+                    <div class="dropdown mr-2 dropdown-filter">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">{{ filter_block|capfirst }}</button>
+                        <ul class="dropdown-menu">
+                            {% for filter in filters %}
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="form-check">
+                                            {% if filter_block|upper == 'ORDERBY' %}
+                                                <input class="form-check-input" type="radio" name="radio" id="{{filter}}-{{loop.index}}"/>
+                                            {% else %}
+                                                <input class="form-check-input" type="checkbox" value="" id="{{filter}}-{{loop.index}}" />
+                                            {% endif %}
+                                            <label class="form-check-label" for="{{filter}}-{{loop.index}}">{{ filter|capfirst }}</label>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <div class="dropdown-filter mr-2">
+                <button class="all-filters-btn" type="button">Все фильтры</button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-2 d-flex justify-content-end filter-container card-sizes">
+            <i class="fa fa-th"></i>
+            <i class="fa fa-th-large"></i>
+        </div>
+    </div>
+</div>

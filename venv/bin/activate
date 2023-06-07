@@ -38,8 +38,13 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+
 VIRTUAL_ENV="/home/vitomania/mir_prazdnika/venv"
 export VIRTUAL_ENV
+
+set -a
+source "$VIRTUAL_ENV/../.env.dev"
+set +a
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/bin:$PATH"

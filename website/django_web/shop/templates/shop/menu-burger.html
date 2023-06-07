@@ -1,0 +1,17 @@
+<nav class="menu-burger">
+    <div class="menu-burger__main">
+        <ul class="menu-burger__main-list">
+            {% for category in categories %}
+                <li class="menu-burger__main-item">
+                    <a href="#" class="menu-burger__main-link">
+                        <i class="fa fa-book" aria-hidden="true"></i>{{ category }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="menu-burger__drop"></div>
+    <button class="menu-burger__close-btn" type="button">
+        <i class="fa fa-times"></i>
+    </button>
+</nav>

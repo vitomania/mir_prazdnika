@@ -1,0 +1,125 @@
+.header {
+    background: linear-gradient(to right,#cb11ab 0,#481173 100%) no-repeat;
+    padding: 16px 0 30px;
+}
+
+.header__container {
+    padding: 0px 30px;
+}
+
+.header__bottom, .nav-element {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* nav-element */
+
+.nav-element__burger {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+
+    padding: 10px 12px;
+    margin-right: 30px;
+
+    background: transparent;
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-element__logo {
+    text-decoration: none;
+    color: rgb(236, 234, 114);
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* search-catalog */
+
+.header__search-catalog {
+    flex-grow: 1;
+    margin: 0 52px 0 20px;
+    position: relative;
+}
+
+.search-catalog__block {
+    position: relative;
+}
+
+.search-catalog__input {
+    width: 100%;
+    padding: 16px 0 15px 45px;
+    border: none;
+    border-radius: 56px;
+    transition: background .3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.search-catalog__input:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.search-catalog__input:focus {
+    outline: none;
+    background-color: white;
+}
+
+.search-catalog__input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.4em;
+}
+
+.search-catalog__btn {
+    position: absolute;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.search-catalog__btn:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.search-catalog__btn.j-is-focused {
+    color: grey;
+}
+
+/* navbar-pc */
+
+.navbar-pc {
+    display: flex;
+}
+
+.navbar-pc__item {
+    margin-left: 36px;
+}
+
+.navbar-pc__item:first-child {
+    margin-left: 0px;
+}
+
+.navbar-pc__link {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.navbar-pc__link i {
+    font-size: 2em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-pc__link:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: color .3s ease;
+}
