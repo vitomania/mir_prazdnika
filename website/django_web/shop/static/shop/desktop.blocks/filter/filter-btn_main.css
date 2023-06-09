@@ -1,0 +1,11 @@
+.filter-btn__main {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--button__background-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}

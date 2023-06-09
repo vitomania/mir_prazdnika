@@ -1,0 +1,12 @@
+@import "./filter__list.css";
+@import "./filter__item.css";
+@import "./filter-btn.css";
+@import "./filter-btn_main.css";
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 10px 0;
+}

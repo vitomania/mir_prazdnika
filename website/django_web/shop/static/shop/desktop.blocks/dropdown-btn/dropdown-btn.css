@@ -1,0 +1,13 @@
+.dropdown-btn {
+    position: relative;
+    padding: 5px 28px 7px 12px;
+}
+
+.dropdown-btn::after {
+    content: '';
+    position: absolute;
+    border: 5px solid transparent;
+    border-top: 5px solid black;
+    margin-left: 8px;
+    top: 13px;
+}

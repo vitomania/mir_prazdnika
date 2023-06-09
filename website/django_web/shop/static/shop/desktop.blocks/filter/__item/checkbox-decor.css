@@ -1,0 +1,22 @@
+.checkbox-decor {
+    display: block;
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgb(212, 209, 209);
+    border-radius: 6px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.checkbox-decor::after {
+    content: '';
+    width: 6px;
+    height: 12px;
+    top: 1px;
+    left: 6px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+}

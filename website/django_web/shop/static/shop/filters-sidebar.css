@@ -9,7 +9,7 @@
     transition: right 0.4s ease;
 }
 
-.filters-sidebar.show {
+.filters-sidebar.j-is-shown {
     right: 0;
 }
 

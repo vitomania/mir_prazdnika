@@ -1,15 +1,25 @@
+@import "./variables.css";
 @import "header.css";
-@import "catalog.css";
+/* @import "catalog.css"; */
 @import "home.css";
 @import "menu-burger.css";
 @import "filters-sidebar.css";
+@import "desktop.blocks/filter/filter.css";
+@import "desktop.blocks/dropdown-filter/dropdown-filter.css";
+@import "desktop.blocks/dropdown-btn/dropdown-btn.css";
+@import "desktop.blocks/filter-blocks/filter-blocks.css";
 
 * {
     margin: 0px;
     box-sizing: border-box;
 }
 
-.overlay--menu-burger {
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.overlay--menu-burger, .overlay--all-filters-btn {
     display: block!important;
     /* opacity: .3; */
 }
@@ -25,4 +35,8 @@
     opacity: 0.3;
     position: fixed;
     z-index: 1;
+}
+
+.main__container {
+    padding: 0 30px;
 }

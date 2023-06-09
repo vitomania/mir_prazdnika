@@ -1,0 +1,21 @@
+@import "./__container/filters-block__container.css";
+@import "./__btn/filters-block__btn.css";
+
+.all-filters-btn {
+    position: relative;
+    padding-left: 30px;
+}
+
+.all-filters-btn::before {
+    content: '';
+    position: absolute;
+    background-image: url('./filter-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    left: 8px;
+    top: 8px;
+    display: inline-block;
+}

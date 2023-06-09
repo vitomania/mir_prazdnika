@@ -1,0 +1,43 @@
+<div class="filter-blocks">
+    <div class="filter-blocks__container">
+        <div id="cat_1" class="dropdown-filter">
+            <button class="dropdown-filter__btn dropdown-btn" onclick="openDropdownFilterContent('cat_1')">Катеогрия 1</button>
+            <div class="dropdown-filter__content">
+                <div class="filter">
+                    <ul class="filter__list">
+                        {% for filter in checkbox_filters %}
+                            <li class="filter__item">
+                                <input type="checkbox">
+                                <span class="checkbox-decor"></span>
+                                <span class="checkbox-text">{{ filter }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="filter-btn">
+                    <button class="filter-btn__main">Готово</button>
+                </div>
+            </div>
+        </div>
+        <div id="cat_2" class="dropdown-filter">
+            <button class="dropdown-filter__btn dropdown-btn" onclick="openDropdownFilterContent('cat_2')">Катеогрия 2</button>
+            <div class="dropdown-filter__content">
+                <div class="filter">
+                    <ul class="filter__list">
+                        {% for filter in radio_filters %}
+                            <li class="filter__item">
+                                <input type="checkbox">
+                                <span class="checkbox-decor"></span>
+                                <span class="checkbox-text">{{ filter }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="filter-btn">
+                    <button class="filter-btn__main">Готово</button>
+                </div>
+            </div>
+        </div>
+        <button id="all-filters-btn" class="filters-block__btn all-filters-btn" onclick="toggleAllFilters()">Все фильтры</button>
+    </div>
+</div>

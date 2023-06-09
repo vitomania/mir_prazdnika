@@ -24,7 +24,9 @@ def catalog(request):
             },
             'orderby': ['orderby1', 'orderby2', 'orderby3']
         },
-        'categories': [f'Category_{i}' for i in range(15)],
+        'categories': ['LongLongLongLongLOngLongCategory'] + [f'Category_{i}' for i in range(40)],
+        'checkbox_filters': ['LongLongLodf sng Lo ngLOngLongFilter'] + [f'Filter_{i}' for i in range(40)],
+        'radio_filters': ['LongLongLodf sng Lo ngLOngLongFilter'] + [f'Filter_{i}' for i in range(5)]
     }
 
     return render(request, 'shop/catalog.html', context)

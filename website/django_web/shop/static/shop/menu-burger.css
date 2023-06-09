@@ -8,14 +8,13 @@
     left: -500px; 
     height: 100%;
     /* border: 1px solid #1b1b1b; */
-    /* background-color: white; */
     z-index: 2;
     transition: left 0.4s ease;
-    overflow-y: auto;
 }
 
 .menu-burger__main {
     background-color: white;
+    overflow-y: auto;
     height: 100%;
 }
 
@@ -28,8 +27,7 @@
 } */
 
 .menu-burger__main-list {
-    padding: 10px 20px;
-    height: 100%;
+    padding: 10px 20px 20px;
 }
 
 .menu-burger__main-item {
@@ -49,8 +47,7 @@
     color: black;
     display: block;
     border-radius: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
 .menu-burger__main-link:hover {
@@ -64,20 +61,14 @@
 
 
 .menu-burger__close-btn {
-    /* position: absolute; */
     display: block;
     top: 0px;
-    /* left: 260px; */
     transition: left 0.4s ease;
     cursor: pointer;
     background: transparent;
     border: none;
     color: white;
     font-size: 1.5em;
-}
-
-.menu-burger__close-btn.j-is-shown {
-    left: 250px;
 }
 
 .menu-burger.j-is-shown {
