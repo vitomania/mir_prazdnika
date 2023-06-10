@@ -18,15 +18,10 @@ export function openDropdownFilterContent(dropdownFilterID) {
 }
 
 export function closeDropdownFilterContent(event) {
-    // console.log(event.target);
-    // console.log(document.querySelector('dropdown-filter__content.opened'));
-    // console.log(event.target.matches('.dropdown-filter__content.opened'));
     var openedFilter = document.querySelector('.dropdown-filter__content.opened');
-    console.log(event.target, openedFilter);
 
     if (!!openedFilter) {
-        console.log(event.target, openedFilter.parentNode, event.target.matches('#' + openedFilter.parentNode.id));
-        if (!event.target.matches('#' + openedFilter.parentNode.id)) {
+        if (!openedFilter.parentNode.contains(event.target)) {
             openedFilter.classList.remove('opened');
         }
     }
