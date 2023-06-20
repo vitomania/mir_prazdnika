@@ -1,0 +1,17 @@
+.product-card__body {
+    min-height: calc(var(--product-card-img-height) * 0.3);
+    height: auto;
+    /* padding: 5px 10px 5px; */
+    margin-top: 5px;
+}
+
+.product-card__title {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-card__brand {
+    color: rgb(168, 167, 167);
+}

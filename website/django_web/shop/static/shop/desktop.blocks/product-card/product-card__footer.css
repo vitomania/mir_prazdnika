@@ -1,0 +1,30 @@
+.product-card__footer {
+    height: calc(var(--product-card-img-height) * 0.2);
+    padding: 5px 20px;
+    border: 1px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-card__cart-btn {
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--button__background-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.product-card__cart-btn i {
+    font-size: 24px;
+    margin-left: 5px;
+}

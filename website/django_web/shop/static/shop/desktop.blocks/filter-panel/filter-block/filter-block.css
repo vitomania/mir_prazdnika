@@ -1,0 +1,10 @@
+@import "./filter-block__btn.css";
+@import "./filter-block__content.css";
+
+.filter-block {
+    position: relative;
+}
+
+.filter-block:first-child .filter-block__content {
+    left: 0;
+}

@@ -1,9 +1,9 @@
-export function openDropdownFilterContent(dropdownFilterID) {
-    var dropdownFilters = document.getElementsByClassName('dropdown-filter');
+function openDropdownFilterContent(dropdownFilterID) {
+    var dropdownFilters = document.getElementsByClassName('filter-block');
     var openDropdownFilter;
     
     for (let i = 0; i < dropdownFilters.length; i++) {
-        var dropdownFilterContent= dropdownFilters[i].querySelector('.dropdown-filter__content');
+        var dropdownFilterContent= dropdownFilters[i].querySelector('.filter-block__content');
 
         if (dropdownFilters[i].id === dropdownFilterID) {
             openDropdownFilter = dropdownFilterContent;
@@ -17,8 +17,8 @@ export function openDropdownFilterContent(dropdownFilterID) {
     openDropdownFilter.classList.toggle('opened');
 }
 
-export function closeDropdownFilterContent(event) {
-    var openedFilter = document.querySelector('.dropdown-filter__content.opened');
+function closeDropdownFilterContent(event) {
+    var openedFilter = document.querySelector('.filter-block__content.opened');
 
     if (!!openedFilter) {
         if (!openedFilter.parentNode.contains(event.target)) {
@@ -26,3 +26,10 @@ export function closeDropdownFilterContent(event) {
         }
     }
 }
+
+var btns = document.getElementsByClassName('filter-block__btn');
+for (let i = 0; i < btns.length; i++) {
+    btns[i].openDropdownFilterContent = openDropdownFilterContent;
+}
+
+window.addEventListener('click', closeDropdownFilterContent);

@@ -1,0 +1,7 @@
+.product-card__img-wrapper {
+    height: calc(var(--product-card-img-height) * 0.7);
+    width: 100%;
+    /* border-radius: 6px; */
+    /* background-color: beige; */
+    /* position: absolute; */
+}

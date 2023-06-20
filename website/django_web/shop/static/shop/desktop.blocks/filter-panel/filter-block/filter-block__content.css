@@ -1,4 +1,4 @@
-.dropdown-filter__content {
+.filter-block__content {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -13,6 +13,6 @@
     left: calc(50% - 300px / 2)
 }
 
-.dropdown-filter__content.opened {
+.filter-block__content.opened {
     display: flex;
 }

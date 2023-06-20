@@ -14,6 +14,10 @@ def about(request):
 
 def catalog(request):
     context = {
+        'js_scripts_to_include': [
+            'shop/desktop.blocks/filter-panel/filter-block/filter-block.js',
+            'shop/desktop.blocks/filter-side-panel/filters-sidebar.js'
+        ],
         'products': Product.objects.all(),
         'filters_block': {
             'categories': ['Balloons', 'Toys', 'Books'],
@@ -26,7 +30,8 @@ def catalog(request):
         },
         'categories': ['LongLongLongLongLOngLongCategory'] + [f'Category_{i}' for i in range(40)],
         'checkbox_filters': ['LongLongLodf sng Lo ngLOngLongFilter'] + [f'Filter_{i}' for i in range(40)],
-        'radio_filters': ['LongLongLodf sng Lo ngLOngLongFilter'] + [f'Filter_{i}' for i in range(5)]
+        'radio_filters': ['LongLongLodf sng Lo ngLOngLongFilter'] + [f'Filter_{i}' for i in range(5)],
+        'review_count': 234
     }
 
     return render(request, 'shop/catalog.html', context)

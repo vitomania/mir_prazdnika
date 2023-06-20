@@ -1,8 +1,8 @@
-<div class="filter-blocks">
-    <div class="filter-blocks__container">
-        <div id="cat_1" class="dropdown-filter">
-            <button class="dropdown-filter__btn dropdown-btn" onclick="openDropdownFilterContent('cat_1')">Катеогрия 1</button>
-            <div class="dropdown-filter__content">
+<div class="filter-panel">
+    <div class="filter-panel__container">
+        <div id="filter-panel_cat1" class="filter-block">
+            <button class="filter-block__btn dropdown-btn" onclick="openDropdownFilterContent('filter-panel_cat1')">Катеогрия 1</button>
+            <div class="filter-block__content">
                 <div class="filter">
                     <ul class="filter__list">
                         {% for filter in checkbox_filters %}
@@ -19,9 +19,9 @@
                 </div>
             </div>
         </div>
-        <div id="cat_2" class="dropdown-filter">
-            <button class="dropdown-filter__btn dropdown-btn" onclick="openDropdownFilterContent('cat_2')">Катеогрия 2</button>
-            <div class="dropdown-filter__content">
+        <div id="filter-panel_cat2" class="filter-block">
+            <button class="filter-block__btn dropdown-btn" onclick="openDropdownFilterContent('filter-panel_cat2')">Катеогрия 2</button>
+            <div class="filter-block__content">
                 <div class="filter">
                     <ul class="filter__list">
                         {% for filter in radio_filters %}
@@ -38,6 +38,6 @@
                 </div>
             </div>
         </div>
-        <button id="all-filters-btn" class="filters-block__btn all-filters-btn" onclick="toggleAllFilters()">Все фильтры</button>
+        <button id="all-filters-btn" class="filter-panel__all-filters-btn" onclick="toggleAllFilters()">Все фильтры</button>
     </div>
 </div>

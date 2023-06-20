@@ -13,3 +13,6 @@ export function closeAllFilters(event) {
         }
     }
 }
+
+document.getElementById("all-filters-btn").toggleAllFilters = toggleAllFilters;
+document.getElementById("overlay").onclick = closeAllFilters;

@@ -1,7 +1,7 @@
 @import "./filter__list.css";
 @import "./filter__item.css";
 @import "./filter-btn.css";
-@import "./filter-btn_main.css";
+@import "./filter-btn__main.css";
 
 .filter {
     display: flex;

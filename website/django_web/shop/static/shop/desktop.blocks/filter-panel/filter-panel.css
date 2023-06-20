@@ -1,0 +1,9 @@
+@import "./filter-panel__container.css";
+@import "./filter-block/filter-block.css";
+@import "./filter-panel__all-filters-btn.css";
+
+
+.filter-panel {
+    display: flex;
+    align-items: center;
+}

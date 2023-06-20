@@ -1,12 +1,19 @@
-@import "./__container/filters-block__container.css";
-@import "./__btn/filters-block__btn.css";
-
-.all-filters-btn {
+ .filter-panel__all-filters-btn {
     position: relative;
     padding-left: 30px;
+    white-space: nowrap;
+
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0,.4);
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px 12px 7px 30px;
 }
 
-.all-filters-btn::before {
+.filter-panel__all-filters-btn::before {
     content: '';
     position: absolute;
     background-image: url('./filter-icon.png');

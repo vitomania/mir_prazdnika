@@ -1,13 +1,16 @@
 @import "./variables.css";
-@import "header.css";
+@import "./desktop.blocks/header/header.css";
 /* @import "catalog.css"; */
 @import "home.css";
-@import "menu-burger.css";
-@import "filters-sidebar.css";
+@import "desktop.blocks/menu-burger/menu-burger.css";
+@import "desktop.buttons/dropdown-btn.css";
+@import "desktop.buttons/decorated-btn.css";
 @import "desktop.blocks/filter/filter.css";
-@import "desktop.blocks/dropdown-filter/dropdown-filter.css";
-@import "desktop.blocks/dropdown-btn/dropdown-btn.css";
-@import "desktop.blocks/filter-blocks/filter-blocks.css";
+@import "desktop.blocks/filter-panel/filter-panel.css";
+@import "desktop.blocks/filter-side-panel/filters-sidebar.css";
+
+@import "desktop.blocks/product-card/product-card.css";
+@import "desktop.blocks/catalog/catalog.css";
 
 * {
     margin: 0px;

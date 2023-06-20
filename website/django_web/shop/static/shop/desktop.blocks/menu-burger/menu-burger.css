@@ -71,6 +71,6 @@
     font-size: 1.5em;
 }
 
-.menu-burger.j-is-shown {
+.menu-burger.opened {
     left: 0px;
 }

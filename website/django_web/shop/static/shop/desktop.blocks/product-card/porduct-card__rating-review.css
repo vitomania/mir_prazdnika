@@ -1,0 +1,24 @@
+.product-card__rating-review {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-card__rating {
+    margin-right: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-card__rating i{
+    color: gold;
+    /* font-size: 14px; */
+    font-weight: 100;
+}
+
+.product-card__review {
+    margin-right: 10px;
+    color: black;
+    font-size: 18px;
+}

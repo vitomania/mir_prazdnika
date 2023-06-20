@@ -1,21 +1,3 @@
-import { toggleAllFilters, closeAllFilters} from "./filters-sidebar.js"
-import { openDropdownFilterContent, closeDropdownFilterContent} from './desktop.blocks/dropdown-filter/dropdown-filter.js'
-
-document.getElementById("all-filters-btn").toggleAllFilters = toggleAllFilters;
-document.getElementById("overlay").onclick = closeAllFilters;
-
-var btns = document.getElementsByClassName('dropdown-filter__btn');
-for (let i = 0; i < btns.length; i++) {
-    btns[i].openDropdownFilterContent = openDropdownFilterContent;
-}
-
-function windowOnClick(event) {
-    closeDropdownFilterContent(event);
-}
-
-window.onclick = windowOnClick;
-
-
 $('.search-catalog__input').focus(function() {
     $('.search-catalog__btn').toggleClass('j-is-focused');
 });
@@ -33,12 +15,6 @@ $(document).mouseup(function(e) {
 });
 
 // menu-burger
-
-$('.nav-element__burger').click(function() {
-    $('.nav-element__burger').toggleClass('j-is-clicked');
-    $('.menu-burger').toggleClass('j-is-shown');
-    $('.overlay:hidden').toggleClass('overlay--menu-burger');
-});
 
 $('.menu-burger__close-btn').click(function() {
     $('.nav-element__burger').toggleClass('j-is-clicked');
